@@ -12,7 +12,7 @@ const Burger=(props)=> {
         }
     }
     console.log(ingredientscomponent);
-    if(ingredientscomponent.length == 0) {
+    if(ingredientscomponent.length === 0) {
         ingredientscomponent.push(<p>
             Add some ingredients
         </p>)
