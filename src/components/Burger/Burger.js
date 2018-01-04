@@ -11,12 +11,13 @@ const Burger=(props)=> {
             ingredientscomponent.push(<BurgerIngredient key={j+ingredientslist[i]} type={ingredientslist[i]}/>) ;
         }
     }
-    console.log(ingredientscomponent);
+
     if(ingredientscomponent.length === 0) {
-        ingredientscomponent.push(<p>
+        ingredientscomponent.push(<p key='no ingredient'>
             Add some ingredients
         </p>)
     }
+    
     return (
     <div className={classes.Burger}>
         <BurgerIngredient type='bread-top' />
