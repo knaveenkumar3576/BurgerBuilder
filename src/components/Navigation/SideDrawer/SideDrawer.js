@@ -1,10 +1,10 @@
 import React from 'react';
 
-import Logo from '../Logo/Logo';
-import NavigationItems from '../Navigation/NavigationItems/NavigationItems';
+import Logo from '../../Logo/Logo';
+import NavigationItems from '../../Navigation/NavigationItems/NavigationItems';
 import classes from './SideDrawer.css';
 import Backdrop from '../../UI/Backdrop/Backdrop';
-import Aux from '../../../hoc/Auxillary';
+import Aux from '../../../hoc/Auxillary/Auxillary';
 
 const SideDrawer = ( props ) => {
     let sideDrawerclasses = [classes.SideDrawer, classes.Close]; 

@@ -2,7 +2,7 @@ import React from 'react';
 
 import classes from './Logo.css';
 
-import logoPath from '../../../assets/images/burger-logo.png'
+import logoPath from '../../assets/images/burger-logo.png'
 
 const Logo = (props) => {
     return (
