@@ -6,6 +6,7 @@ import Modal from '../components/UI/Modal/Modal'
 import OrderSummary from '../components/Burger/OrderSummary/OrderSummary'
 import axios from '../../src/axios-orders'
 import Spinner from '../components/UI/Spinner/Spinner'
+import ErrorHandler from '../hoc/ErrorHandler/ErrorHandler'
 
 const INGREDIENT_PRICE_LIST = {
   cheese : 1,
@@ -147,4 +148,4 @@ class BurgerBuilder extends Component {
   }
 }
 
-export default BurgerBuilder;
+export default ErrorHandler(BurgerBuilder);
