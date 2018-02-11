@@ -49,7 +49,7 @@ class BurgerBuilder extends Component {
     this.setState({
       ingeredientsAdded:  sum>0,
     });  
-    
+
   }
 
   addIngredientHandler = (type) => {
