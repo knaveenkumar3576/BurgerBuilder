@@ -29,7 +29,19 @@ class BurgerBuilder extends Component {
     axios.get('https://react-burger-builder-990c7.firebaseio.com/ingredients.json')
     .then(response => {
       this.setState({
-        ingredients : response.data
+        ingredients : response.data,
+      });
+    })
+    .catch(error => {
+      this.setState({
+        error : true
+      });      
+    })
+
+    axios.get('https://react-burger-builder-990c7.firebaseio.com/basePrice.json')
+    .then(response => {
+      this.setState({
+        totalPrice : response.data
       });
     })
     .catch(error => {
